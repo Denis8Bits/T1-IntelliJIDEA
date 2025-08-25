@@ -2,19 +2,18 @@ package Controller;
 
 import java.util.Scanner;
 
-public void class ParEimpar {
-    public static void Numeros () {
-        //Solicitarle el número al usuario
-        System.out.println("Ingresa un número");
+public class ParEimpar {
+    public void Numeros(){
+
+        System.out.println("Ingrese un numero");
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
 
-        //Verificar si es par o impar
-        if (num %2 == 0) {
-            return num + "es par";
+        int numero = scanner.nextInt();
+
+        if (numero % 2 == 0){
+            System.out.println(numero + " SI es un numero par");
         }else{
-            return num + "es impar";
-
+            System.out.println(numero + " NO es un numero par");
         }
     }
 }

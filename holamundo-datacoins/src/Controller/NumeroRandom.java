@@ -1,14 +1,15 @@
 package Controller;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class Random {
+public class NumeroRandom {
     public void NumRandom() {
         Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        Random rndm = new Random();
 
         //generar un numero aleatorio entre 1 y 100
-        int numSecret = random.nextInt(100) + 1;
+        int numSecret = rndm.nextInt(100) + 1;
 
         System.out.println("Adivina el número secreto");
         int intento = scanner.nextInt();
